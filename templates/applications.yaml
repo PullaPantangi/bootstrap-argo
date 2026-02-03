@@ -8,12 +8,12 @@ metadata:
 spec:
   project: {{ $product }}-{{ $envkey }}
   source:
-    repoURL: git@github.com:PullaPantangi/roboshop-k8s-26.git
+    repoURL: https://github.com/PullaPantangi/roboshop-k8s-26.git
     targetRevision: master
-    path: mongodb
+    path: .
   destination:
     server: https://kubernetes.default.svc
-    namespace: mongodb
+    namespace: argocd
   syncPolicy:
     automated: {}
     syncOptions:
