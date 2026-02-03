@@ -5,7 +5,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: {{ $product }}-{{ $envkey }}
-  namespace: argocd`
+  namespace: argocd
   # Finalizer ensures that the project isn't deleted until apps are gone
   finalizers:
     - resources-finalizer.argocd.argoproj.io
