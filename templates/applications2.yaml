@@ -3,7 +3,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: {{ $product }}-{{ $envkey }}-product-apps
+  name: {{ $product }}-{{ $envkey }}-product-apps-2
   namespace: argocd
 spec:
   project: {{ $product }}-{{ $envkey }}
